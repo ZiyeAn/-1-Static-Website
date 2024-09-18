@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'LED';
+    src: url("images/LEDLIGHT.otf") format('opentype');
+}
+.sankofa-display-regular {
+    font-family: "Sankofa Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body{
+    background-color: #ffffff;
+    opacity: 1;
+    background-image: radial-gradient(#656565 0.5px, #ffffff 0.5px);
+    background-size: 10px 10px;
+}
+h1{
+    font-family: LED;
+    color: black;
+    font-size: 90px;
+    text-align: center;
+    text-shadow:  #a60300 0px 4px 10px;
+}
+h2{
+    font-size: 2rem;
+    font-family: "Sankofa Display", sans-serif;
+
+}
+a:link{
+    color: black;
+    text-decoration: none
+}
+a:hover{
+    color:#a60300;
+    text-decoration: none
+}
+a:visited{
+    color: #a60300;
+    text-decoration: none
+}
+.homepage-container{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header"
+    "img sidebar";
+}
+.title{
+    grid-area: header;
+}
+.home-image{
+    grid-area: img;
+    justify-self: center;
+}
+.table-of-content{
+    grid-area: sidebar;
+    justify-self: center;
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+.underline {
+    position: relative;
+    white-space: nowrap;
+}
+  
+.underline:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(0.3125em * -0.625);
+    height: 0.3125em;
+    background-image: url("data:image/svg+xml,<svg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='Crimson' stroke-width='14'/></svg>");
+    background-size: auto 100%;
+}
+
+.container{
+    margin:2.5%;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "contentImg mainContent"
+    "footer footer";
+}
+.content-image{
+    grid-area: contentImg;
+    align-self: center;
+
+}
+.content{
+    margin-left: 5%;
+    grid-area: mainContent;
+} 
+.capColumns {
+    text-align: center; 
+}
+.cap {
+    display: inline-block;
+    width: 18%; 
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 10px; 
+    vertical-align: top; 
+    text-align: left;
+}
+.capContainer{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.SporeContainer{
+    margin:2.5%;
+    display:grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "SporeContent1 SporeImg SporeContent2"
+    "footer footer footer";
+}
+.Sporeimage{
+    grid-area: SporeImg;
+}
+.content1{
+    grid-area: SporeContent1;
+}
+.content2{
+    grid-area: SporeContent2;
+}
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 14px 0; 
+}
+.footer a {
+    color: #656565;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.footer a:hover {
+    color:#a60300 ;
+}
+.footer a:visited {
+    color:#572726 ;
+}
+.footer a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+  
+
+
+
+  
